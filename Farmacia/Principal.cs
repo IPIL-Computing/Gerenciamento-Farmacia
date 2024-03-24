@@ -13,6 +13,7 @@ namespace Farmacia
 {
     public partial class Principal : Form
     {
+
         public Principal()
         {
             InitializeComponent();
