@@ -132,7 +132,7 @@
             this.flowLayoutPanel1.Controls.Add(this.guna2Button4);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(-3, 253);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(240, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(240, 120);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // guna2Button3

@@ -15,6 +15,7 @@ namespace Farmacia
     {
         Dashboard dashboard = new Dashboard();
         Inventory estoque = new Inventory();
+        MedicineList lista = new MedicineList();
         public Principal()
         {
             InitializeComponent();
@@ -74,6 +75,7 @@ namespace Farmacia
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             Active(guna2Button1, guna2Button2);
+            ShowForm(lista);
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
