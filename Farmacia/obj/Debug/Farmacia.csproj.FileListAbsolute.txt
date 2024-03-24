@@ -7,3 +7,8 @@ C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.csproj.GenerateRes
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.exe
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.pdb
+C:\Users\hp\source\repos\Farmacia\Farmacia\bin\Debug\Guna.UI2.dll
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Form1.resources
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.csproj.CopyComplete
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Principal.resources
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Dashboard.resources

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Farmacia
 {
-    public partial class Dashboard : UserControl
+    public partial class Dashboard : Form
     {
-        Principal principal = new Principal();
-
         public Dashboard()
         {
             InitializeComponent();
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
         }
     }
 }
