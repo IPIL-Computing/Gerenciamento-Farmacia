@@ -52,17 +52,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddMedicine.cs">
+    <Compile Include="AddMedicine1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMedicine1.Designer.cs">
+      <DependentUpon>AddMedicine1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMedicineToCategory.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddMedicine.Designer.cs">
-      <DependentUpon>AddMedicine.cs</DependentUpon>
+    <Compile Include="AddMedicineToCategory.Designer.cs">
+      <DependentUpon>AddMedicineToCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Category.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Category.Designer.cs">
       <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryList1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryList1.Designer.cs">
+      <DependentUpon>CategoryList1.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -82,11 +94,23 @@
     <Compile Include="Inventory.Designer.cs">
       <DependentUpon>Inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Medicine1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicine1.Designer.cs">
+      <DependentUpon>Medicine1.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedicineList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MedicineList.Designer.cs">
       <DependentUpon>MedicineList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutOfDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutOfDate.Designer.cs">
+      <DependentUpon>OutOfDate.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -97,11 +121,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShowForm.cs" />
-    <EmbeddedResource Include="AddMedicine.resx">
-      <DependentUpon>AddMedicine.cs</DependentUpon>
+    <EmbeddedResource Include="AddMedicine1.resx">
+      <DependentUpon>AddMedicine1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMedicineToCategory.resx">
+      <DependentUpon>AddMedicineToCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryList1.resx">
+      <DependentUpon>CategoryList1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -112,8 +142,14 @@
     <EmbeddedResource Include="Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Medicine1.resx">
+      <DependentUpon>Medicine1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MedicineList.resx">
       <DependentUpon>MedicineList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutOfDate.resx">
+      <DependentUpon>OutOfDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

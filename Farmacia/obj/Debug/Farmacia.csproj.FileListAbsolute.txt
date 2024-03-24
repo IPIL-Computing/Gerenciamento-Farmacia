@@ -16,3 +16,6 @@ C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Inventory.resource
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.MedicineList.resources
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Category.resources
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.AddMedicine.resources
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.CategoryList.resources
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Medicine.resources
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.AddMedicineToCategory.resources

@@ -22,6 +22,18 @@ namespace Farmacia
         {
             InitializeComponent();
             show.Mostrar(dashboard, this);
+            dashboard.AbrirForm += Abrir;
+        }
+
+        public void Abrir(object sender, string nome)
+        {
+            switch (nome)
+            {
+                case "Inventory":
+                    estoque.MdiParent = this;
+                    estoque.Show();
+                    break;
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
