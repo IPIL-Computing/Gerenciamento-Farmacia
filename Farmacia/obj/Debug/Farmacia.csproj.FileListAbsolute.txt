@@ -12,3 +12,4 @@ C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Form1.resources
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.csproj.CopyComplete
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Principal.resources
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Dashboard.resources
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Inventory.resources

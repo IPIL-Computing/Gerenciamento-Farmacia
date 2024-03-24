@@ -18,18 +18,14 @@ namespace Farmacia
         public Principal()
         {
             InitializeComponent();
-            dashboard.MdiParent = this;
-            estoque.MdiParent = this;
-
-            dashboard.Show();
+            ShowForm(dashboard);
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             timer1.Start();
             Active(guna2Button3, guna2Button4);
-            estoque.Show();
-            dashboard.Close();
+            ShowForm(estoque);
         }
         bool menuExpand = false;
         private void timer1_Tick(object sender, EventArgs e)
@@ -58,10 +54,21 @@ namespace Farmacia
             button1.Checked = false;
             button2.Checked = false;
         }
+        public void ShowForm(Form form)
+        {
+            foreach (Form f in this.MdiChildren)
+            {
+                f.Hide();
+            }
+            form.MdiParent = this;
+            form.Show();
+        }
+
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Active(guna2Button3, guna2Button4);
+            ShowForm(dashboard);
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
