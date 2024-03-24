@@ -50,7 +50,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(111)))), ((int)(((byte)(60)))));
-            this.label4.Location = new System.Drawing.Point(485, 10);
+            this.label4.Location = new System.Drawing.Point(303, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 38);
             this.label4.TabIndex = 14;
@@ -63,9 +63,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(111)))), ((int)(((byte)(60)))));
             this.label3.Location = new System.Drawing.Point(139, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(355, 38);
+            this.label3.Size = new System.Drawing.Size(172, 38);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Lista de Medicamentos";
+            this.label3.Text = "Categorias";
             // 
             // label1
             // 

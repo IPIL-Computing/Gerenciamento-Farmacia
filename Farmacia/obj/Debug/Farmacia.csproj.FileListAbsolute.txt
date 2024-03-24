@@ -15,3 +15,4 @@ C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Dashboard.resource
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Inventory.resources
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.MedicineList.resources
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Category.resources
+C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.AddMedicine.resources
