@@ -396,6 +396,7 @@
             this.guna2Button2.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.guna2Button2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.CustomImages.ImageOffset = new System.Drawing.Point(0, -2);
+            this.guna2Button2.DefaultAutoSize = true;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -405,9 +406,9 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(16)))), ((int)(((byte)(0)))));
             this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(16)))), ((int)(((byte)(0)))));
             this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(22, 606);
+            this.guna2Button2.Location = new System.Drawing.Point(22, 591);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(224, 43);
+            this.guna2Button2.Size = new System.Drawing.Size(213, 31);
             this.guna2Button2.TabIndex = 42;
             this.guna2Button2.Text = "    Eliminar Medicamento";
             // 
@@ -445,7 +446,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(836, 656);
+            this.ClientSize = new System.Drawing.Size(836, 646);
             this.Controls.Add(this.nameMedicine);
             this.Controls.Add(this.guna2HtmlLabel28);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -458,6 +459,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Medicine1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Medicine1";
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();

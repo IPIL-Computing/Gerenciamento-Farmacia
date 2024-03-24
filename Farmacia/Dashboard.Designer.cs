@@ -291,6 +291,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(190, 25);
             this.guna2Button3.TabIndex = 0;
             this.guna2Button3.Text = "Ver »";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Elipse3
             // 
@@ -354,6 +355,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(122, 25);
             this.guna2Button4.TabIndex = 1;
             this.guna2Button4.Text = "Ir para estoque »";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // label10
             // 

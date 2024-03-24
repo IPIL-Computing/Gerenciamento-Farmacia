@@ -326,8 +326,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(836, 656);
+            this.ClientSize = new System.Drawing.Size(836, 646);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2TextBox5);
@@ -347,6 +348,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddMedicine1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "AddMedicine1";
             this.ResumeLayout(false);
             this.PerformLayout();

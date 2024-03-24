@@ -39,6 +39,7 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -130,9 +131,10 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.guna2Button3);
             this.flowLayoutPanel1.Controls.Add(this.guna2Button4);
+            this.flowLayoutPanel1.Controls.Add(this.guna2Button5);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(-3, 253);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(240, 120);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(240, 171);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // guna2Button3
@@ -188,6 +190,30 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // guna2Button5
+            // 
+            this.guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(72)))), ((int)(((byte)(8)))));
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(111)))), ((int)(((byte)(60)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
+            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.ImageOffset = new System.Drawing.Point(20, 0);
+            this.guna2Button5.ImageSize = new System.Drawing.Size(22, 22);
+            this.guna2Button5.Location = new System.Drawing.Point(3, 119);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.guna2Button5.Size = new System.Drawing.Size(240, 45);
+            this.guna2Button5.TabIndex = 3;
+            this.guna2Button5.Text = "Medicamentos Expirados";
+            this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,5 +245,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }

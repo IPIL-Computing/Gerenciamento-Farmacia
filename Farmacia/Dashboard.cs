@@ -26,5 +26,15 @@ namespace Farmacia
         {
             AbrirForm?.Invoke(this, "Inventory");
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            AbrirForm?.Invoke(this, "OutOfDate");
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            AbrirForm?.Invoke(this, "Inventory");
+        }
     }
 }

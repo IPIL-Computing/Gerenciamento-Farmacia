@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace Farmacia
 {
@@ -18,23 +19,21 @@ namespace Farmacia
             form.MdiParent = atual;
             form.Show();
         }
-        public void Mostra(Form form, Form atual, EventHandler<string> eventoAbrirFormulario)
+        public void Form(Form form1, Guna2Button button1, Guna2Button button2, Guna2Button button3)
         {
-            // Oculta todos os formulários filhos atualmente abertos
-            foreach (Form f in atual.MdiChildren)
-            {
-                f.Hide();
+            foreach(Form form in form1.MdiChildren){
+                if (form.Visible)
+                {
+                    Active(button1, button2, button3);
+                }
             }
-
-            // Associa o formulário pai ao formulário filho
-            form.MdiParent = atual;
-
-            // Aciona o evento para notificar o formulário pai sobre o formulário a ser aberto
-            eventoAbrirFormulario?.Invoke(this, form.Name);
-
-            // Exibe o formulário filho
-            form.Show();
         }
 
+        public void Active(Guna2Button button1, Guna2Button button2, Guna2Button button3)
+        {
+            button1.Checked = false;
+            button2.Checked = false;
+            button3.Checked = false;
+        }
     }
 }

@@ -18,6 +18,7 @@ namespace Farmacia
         MedicineList lista = new MedicineList();
         Category categoria = new Category();
         ShowForm show = new ShowForm();
+        OutOfDate expirado = new OutOfDate();
         public Principal()
         {
             InitializeComponent();
@@ -32,6 +33,14 @@ namespace Farmacia
                 case "Inventory":
                     estoque.MdiParent = this;
                     estoque.Show();
+                    show.Form(estoque, guna2Button1, null, null);
+                    guna2Button2.Checked = true;
+                    break;
+                case "OutOfDate":
+                    expirado.MdiParent = this;
+                    expirado.Show();
+                    show.Form(expirado, guna2Button1, null, null);
+                    guna2Button5.Checked = true;
                     break;
             }
         }
@@ -39,7 +48,7 @@ namespace Farmacia
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            Active(guna2Button3, guna2Button4);
+            show.Active(guna2Button3, guna2Button4, guna2Button5);
             show.Mostrar(estoque, this);
         }
         bool menuExpand = false;
@@ -48,7 +57,7 @@ namespace Farmacia
            if(menuExpand == false)
             {
                 flowLayoutPanel1.Height += 10;
-                if(flowLayoutPanel1.Height >= 120)
+                if(flowLayoutPanel1.Height >= 171)
                 {
                     timer1.Stop();
                     menuExpand = true;
@@ -64,30 +73,31 @@ namespace Farmacia
                 }
             }
         }
-        public void Active(Guna2Button button1, Guna2Button button2)
-        {
-            button1.Checked = false;
-            button2.Checked = false;
-        }
         
 
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Active(guna2Button3, guna2Button4);
+            show.Active(guna2Button3, guna2Button4, guna2Button5);
             show.Mostrar(dashboard, this);
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            Active(guna2Button1, guna2Button2);
+            show.Active(guna2Button1, guna2Button2, null);
             show.Mostrar(lista, this);
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            Active(guna2Button1, guna2Button2);
+            show.Active(guna2Button1, guna2Button2, null);
             show.Mostrar(categoria, this);
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            show.Active(guna2Button1, guna2Button2, null);
+            show.Mostrar(expirado, this);
         }
     }
 }

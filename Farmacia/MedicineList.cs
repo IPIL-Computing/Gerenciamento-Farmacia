@@ -12,7 +12,6 @@ namespace Farmacia
 {
     public partial class MedicineList : Form
     {
-        AddMedicine add = new AddMedicine();
         public MedicineList()
         {
             InitializeComponent();
@@ -20,7 +19,7 @@ namespace Farmacia
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            addMedicine1.Visible = true;
+
         }
 
         private void MedicineList_Load(object sender, EventArgs e)
