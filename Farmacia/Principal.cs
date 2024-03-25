@@ -19,11 +19,14 @@ namespace Farmacia
         Category categoria = new Category();
         ShowForm show = new ShowForm();
         OutOfDate expirado = new OutOfDate();
+        AddMedicine1 add = new AddMedicine1();
         public Principal()
         {
             InitializeComponent();
             show.Mostrar(dashboard, this);
             dashboard.AbrirForm += Abrir;
+            estoque.AbrirForm += Abrir;
+            lista.AbrirForm += Abrir;
         }
 
         public void Abrir(object sender, string nome)
@@ -31,16 +34,33 @@ namespace Farmacia
             switch (nome)
             {
                 case "Inventory":
-                    estoque.MdiParent = this;
-                    estoque.Show();
+                    show.Mostrar(estoque, this);
                     show.Form(estoque, guna2Button1, null, null);
                     guna2Button2.Checked = true;
                     break;
                 case "OutOfDate":
-                    expirado.MdiParent = this;
-                    expirado.Show();
-                    show.Form(expirado, guna2Button1, null, null);
+                    show.Mostrar(expirado, this);
                     guna2Button5.Checked = true;
+                    guna2Button1.Checked = false;
+                    menuExpand = false;
+                    timer1.Start(); 
+                    break;
+                case "MedicineList":
+                    show.Mostrar(lista, this);
+                    show.Active(guna2Button1, guna2Button2, null);
+                    guna2Button3.Checked = true;
+                    menuExpand = false;
+                    timer1.Start();
+                    break;
+                case "Category":
+                    show.Mostrar(categoria, this);
+                    guna2Button2.Checked = false;
+                    guna2Button4.Checked = true;
+                    menuExpand = false;
+                    timer1.Start();
+                    break;
+                case "AddMedicine1":
+                    show.Mostrar(add, this);
                     break;
             }
         }

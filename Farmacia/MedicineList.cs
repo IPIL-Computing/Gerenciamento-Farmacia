@@ -16,10 +16,11 @@ namespace Farmacia
         {
             InitializeComponent();
         }
+        public event EventHandler<string> AbrirForm;
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            AbrirForm?.Invoke(this, "AddMedicine1");
         }
 
         private void MedicineList_Load(object sender, EventArgs e)

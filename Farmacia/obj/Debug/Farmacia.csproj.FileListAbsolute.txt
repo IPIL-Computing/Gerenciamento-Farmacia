@@ -20,3 +20,4 @@ C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.AddMedicine1.resou
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.CategoryList1.resources
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.Medicine1.resources
 C:\Users\hp\source\repos\Farmacia\Farmacia\obj\Debug\Farmacia.OutOfDate.resources
+C:\Users\hp\source\repos\Farmacia\Farmacia\bin\Debug\MySql.Data.dll

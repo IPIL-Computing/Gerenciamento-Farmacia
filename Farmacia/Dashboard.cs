@@ -24,7 +24,7 @@ namespace Farmacia
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            AbrirForm?.Invoke(this, "Inventory");
+            AbrirForm?.Invoke(this, "MedicineList");
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

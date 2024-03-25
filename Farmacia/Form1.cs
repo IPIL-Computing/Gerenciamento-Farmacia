@@ -12,6 +12,7 @@ namespace Farmacia
 {
     public partial class Form1 : Form
     {
+        Database data = new Database();
         public Form1()
         {
             InitializeComponent();
@@ -19,6 +20,7 @@ namespace Farmacia
 
         private async void Form1_Load(object sender, EventArgs e)
         {
+            data.CriarBancoETabela();
             guna2ProgressBar1.Value = 0;
 
             await Task.Run(() =>

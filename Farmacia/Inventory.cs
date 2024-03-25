@@ -16,5 +16,21 @@ namespace Farmacia
         {
             InitializeComponent();
         }
+        public event EventHandler<string> AbrirForm;
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            AbrirForm?.Invoke(this, "MedicineList");
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            AbrirForm?.Invoke(this, "Category");
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            AbrirForm?.Invoke(this, "OutOfDate");
+        }
     }
 }

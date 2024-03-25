@@ -1,0 +1,2 @@
+*
+!/.vs/Farmacia/v15/Server/sqllite3/db.lock

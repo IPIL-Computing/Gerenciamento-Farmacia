@@ -117,6 +117,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(190, 25);
             this.guna2Button3.TabIndex = 0;
             this.guna2Button3.Text = "Ver »";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // panel2
             // 
@@ -177,6 +178,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(190, 25);
             this.guna2Button2.TabIndex = 0;
             this.guna2Button2.Text = "Ver Lista Completa »";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // panel1
             // 
@@ -237,6 +239,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(190, 25);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Ver Categorias »";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label2
             // 
