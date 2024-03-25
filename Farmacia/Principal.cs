@@ -20,13 +20,17 @@ namespace Farmacia
         ShowForm show = new ShowForm();
         OutOfDate expirado = new OutOfDate();
         AddMedicine1 add = new AddMedicine1();
+        AddCategory addC = new AddCategory();
         public Principal()
         {
             InitializeComponent();
             show.Mostrar(dashboard, this);
             dashboard.AbrirForm += Abrir;
+            categoria.AbrirForm += Abrir;
             estoque.AbrirForm += Abrir;
             lista.AbrirForm += Abrir;
+            addC.AbrirForm += Abrir;
+            add.AbrirForm += Abrir;
         }
 
         public void Abrir(object sender, string nome)
@@ -61,6 +65,9 @@ namespace Farmacia
                     break;
                 case "AddMedicine1":
                     show.Mostrar(add, this);
+                    break;
+                case "AddCategory":
+                    show.Mostrar(addC, this);
                     break;
             }
         }

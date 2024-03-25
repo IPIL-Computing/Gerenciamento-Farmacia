@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Farmacia
 {
-    public partial class Category : Form
+    public partial class EditMedicine : Form
     {
-        public Category()
+        public EditMedicine()
         {
             InitializeComponent();
-        }
-
-        public event EventHandler<string> AbrirForm;
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            AbrirForm?.Invoke(this, "AddCategory");
         }
     }
 }
