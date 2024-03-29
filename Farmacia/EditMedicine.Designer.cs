@@ -62,6 +62,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(169, 43);
             this.guna2Button2.TabIndex = 104;
             this.guna2Button2.Text = "Cancelar";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -82,6 +83,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(167, 47);
             this.guna2Button1.TabIndex = 103;
             this.guna2Button1.Text = "Salvar Detalhes";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2HtmlLabel7
             // 

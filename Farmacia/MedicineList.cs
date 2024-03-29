@@ -12,6 +12,7 @@ namespace Farmacia
 {
     public partial class MedicineList : Form
     {
+        List list = new List();
         public MedicineList()
         {
             InitializeComponent();
@@ -25,6 +26,17 @@ namespace Farmacia
 
         private void MedicineList_Load(object sender, EventArgs e)
         {
+            list.See(guna2DataGridView1);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            AbrirForm?.Invoke(this, "EditMedicine");
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            list.Search(guna2Button1.Text, guna2DataGridView1);
         }
     }
 }

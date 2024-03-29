@@ -21,6 +21,7 @@ namespace Farmacia
         OutOfDate expirado = new OutOfDate();
         AddMedicine1 add = new AddMedicine1();
         AddCategory addC = new AddCategory();
+        EditMedicine edit = new EditMedicine();
         public Principal()
         {
             InitializeComponent();

@@ -60,7 +60,31 @@ namespace Farmacia
 
         public void Dump()
         {
+            string arguments = $"--host=127.0.0.1 --user=root --password= --databases {database} --result-file=\"../../../dump\"";
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = "mysqldump",
+                Arguments = arguments,
+                RedirectStandardInput = false,
+                RedirectStandardOutput = false,
+                CreateNoWindow = true,
+                UseShellExecute = false
+            };
 
+            try
+            {
+                // Inicie o processo
+                Process process = Process.Start(psi);
+
+                // Espere o término do processo
+                process.WaitForExit();
+
+                Console.WriteLine("Backup concluído com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erro ao fazer o backup do banco de dados: " + ex.Message);
+            }
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Farmacia
 {
     public partial class AddMedicine1 : Form
     {
+        List List = new List();
         public AddMedicine1()
         {
             InitializeComponent();
@@ -19,9 +20,14 @@ namespace Farmacia
         public event EventHandler<string> AbrirForm;
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if(guna2TextBox1.Text.Trim() == "" || guna2TextBox2.Text.Trim() == "" || guna2TextBox3.Text.Trim() == "" || guna2TextBox4.Text.Trim() == "" || guna2TextBox5.Text.Trim() == "")
+            if(guna2TextBox1.Text.Trim() == "" || guna2TextBox2.Text.Trim() == "" || guna2TextBox3.Text.Trim() == "")
             {
                 MessageBox.Show("Um ou mais campos se encontra vazio, preencha para continuar");
+            }
+            else
+            {
+                int index = guna2ComboBox1.SelectedIndex;
+                List.Add(Convert.ToInt32(guna2TextBox2.Text), guna2TextBox1.Text, index, Convert.ToDouble(guna2TextBox4.Text), Convert.ToInt32(guna2TextBox3.Text));
             }
         }
 
@@ -32,6 +38,11 @@ namespace Farmacia
                 AbrirForm?.Invoke(this, "MedicineList");
             }
 
+        }
+
+        private void AddMedicine1_Load(object sender, EventArgs e)
+        {
+            List.ListCombobox(guna2ComboBox1);
         }
     }
 }

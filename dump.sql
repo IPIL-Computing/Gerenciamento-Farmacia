@@ -36,8 +36,6 @@ CREATE TABLE `medicamento` (
   `categoria` int(11) NOT NULL,
   `qtdEstoque` int(11) NOT NULL,
   `preco` decimal(10,0) NOT NULL,
-  `howToUse` text NOT NULL,
-  `sideEfects` text NOT NULL,
   PRIMARY KEY (`idmedicamento`),
   KEY `categoria` (`categoria`),
   CONSTRAINT `medicamento_ibfk_1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`id`)
@@ -75,7 +73,7 @@ CREATE TABLE `categoria` (
 
 LOCK TABLES `categoria` WRITE;
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
-INSERT INTO `categoria` VALUES (1,'Antibi?ticos','Medicamentos usados para tratar infec??es bacterianas. Eles funcionam matando ou inibindo o crescimento das bact?rias respons?veis pela infec??o.'),(2,'Anticoagulantes','Medicamentos que ajudam a prevenir a forma??o de co?gulos sangu?neos. Eles s?o usados no tratamento e preven??o de condi??es como trombose venosa profunda, embolia pulmonar e AVC.'),(3,'Analg?sicos','Medicamentos usados para aliviar a dor.'),(4,'Anti?cidos','Medicamentos utilizados para neutralizar o excesso de ?cido no est?mago. Eles aliviam os sintomas de azia, indigest?o e refluxo ?cido.'),(5,'Antial?rgicos','Medicamentos usados para tratar rea??es al?rgicas. Eles ajudam a aliviar os sintomas de alergias sazonais, como espirros, coriza e coceira nos olhos.');
+INSERT INTO `categoria` VALUES (1,'Antibióticos','Medicamentos usados para tratar infeções bacterianas. Eles funcionam matando ou inibindo o crescimento das bactérias responsáveis pela infecção.'),(2,'Anticoagulantes','Medicamentos que ajudam a prevenir a formação de coágulos sanguíneos. Eles são usados no tratamento e prevenção de condições como trombose venosa profunda, embolia pulmonar e AVC.'),(3,'Analgésicos','Medicamentos usados para aliviar a dor.'),(4,'Antiácidos','Medicamentos utilizados para neutralizar o excesso de ácido no estômago. Eles aliviam os sintomas de azia, indigestão e refluxo ácido.'),(5,'Antialérgicos','Medicamentos usados para tratar reações alérgicas. Eles ajudam a aliviar os sintomas de alergias sazonais, como espirros, coriza e coceira nos olhos.');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 UNLOCK TABLES;
 

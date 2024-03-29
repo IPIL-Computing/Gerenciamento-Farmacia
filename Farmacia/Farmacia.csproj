@@ -85,6 +85,7 @@
     <Compile Include="CategoryList1.Designer.cs">
       <DependentUpon>CategoryList1.cs</DependentUpon>
     </Compile>
+    <Compile Include="List.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
